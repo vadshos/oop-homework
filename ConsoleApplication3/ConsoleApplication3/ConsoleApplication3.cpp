@@ -13,11 +13,11 @@ void SetColor(int text, int bg) {
 int main() {
 	int a = 0;
 	int achion = 0;
-	int count = 5;
-	string list[] = { "+","-","*","/","x" };
+	int count = 6;
+	string list[] = { "+","-","*","/",">|<","x" };
 	
 	while (a != 13) {
-		achion = 0;
+		achion = 4;
 		system("cls");
 		for (int i = 0; i < count; i++) {
 			if (i == achion) {
@@ -34,12 +34,12 @@ int main() {
 		if (a == 119) {
 			achion--;
 			if (achion < 0) {
-				achion = count;
+				achion = count-1;
 			}
 		}
 		else if (a == 115) {
 			achion++;
-			if (achion > count) {
+			if (achion > count-1) {
 				achion = 0;
 			}
 		}
@@ -73,6 +73,10 @@ int main() {
 		}
 		else if (achion == 3) {
 			result = two.division(one);
+			result.print();
+		}
+		else if(achion == 4) {
+			result = two.comparison(one);
 			result.print();
 		}
 		

@@ -68,6 +68,21 @@ Fraction Fraction::plus(const Fraction& two)
 	return result;
 }
 
+Fraction Fraction::comparison(const Fraction& two)
+{
+	
+	if ((two.num / two.denom) > (this->num / this->denom)) {
+		return two;
+	}
+	else if((two.num / two.denom) < (this->num / this->denom)){
+		return *this;
+	}
+	else {
+		return 0;
+	}
+	
+}
+
 
 Fraction Fraction::mult(const Fraction& two)
 {

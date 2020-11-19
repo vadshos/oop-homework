@@ -9,6 +9,7 @@ public:
 	void setDenom(int denom);
 	void setNum(int num) { this->num = num; };
 	Fraction plus(const Fraction& two);
+	Fraction comparison(const Fraction& two);
 	Fraction mult(const Fraction& two);
 	Fraction minus(const Fraction& two);
 	Fraction  division(const Fraction& two);
