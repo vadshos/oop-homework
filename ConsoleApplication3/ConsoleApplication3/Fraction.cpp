@@ -3,11 +3,26 @@
 #include <Math.h>
 Fraction Fraction::fraction(Fraction& result)
 {
+	int i = 0;
 	if (result.num == result.denom) {
 		result.num = 1;
 		result.denom = 1;
 	}
-	int i = 0;
+	if (result.num > result.denom) {
+		int  j = 0;
+		while (true) {			
+			if ((result.num - result.denom) > 0) {
+				result.num -= result.denom;
+				j++;
+			}
+			else {
+				break;
+			}
+		}
+		result.WholeNumber = j;
+		
+	}	
+	i = 0;
 	if (result.num < result.denom) {
 		i = result.num;
 	}
@@ -24,7 +39,12 @@ Fraction Fraction::fraction(Fraction& result)
 }
 void Fraction::print() const
 {
-	std::cout << num << "/" <<denom<< std::endl;
+	if (WholeNumber == 0) {
+		std::cout << num << "/" << denom << std::endl;
+	}
+	else {
+		std::cout << WholeNumber << " " << num << "/" << denom << std::endl;
+	}
 }
 
 void Fraction::setDenom(int denom)

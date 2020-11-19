@@ -3,7 +3,7 @@
 class Fraction
 {
 	Fraction fraction(Fraction& result);
-	int num = 0, denom = 1;
+	int num = 0, denom = 1, WholeNumber = 0;
 public:
 	void print() const;
 	void setDenom(int denom);

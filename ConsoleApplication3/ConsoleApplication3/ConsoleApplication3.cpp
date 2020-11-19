@@ -45,8 +45,8 @@ int main() {
 		}
 	}
 	if (achion < 5) {
-		int denom;
-		int num;
+		int denom = 0;
+		int num = 0;
 		system("cls");
 		cout << "Enter num first-> ";
 		cin >> num;
