@@ -1,9 +1,0 @@
-﻿  car.cpp
-  home work oop 4.cpp
-  train.cpp
-C:\Users\VS\source\repos\home work oop 4\home work oop 4\train.cpp(11,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\VS\source\repos\home work oop 4\home work oop 4\train.cpp(23,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\VS\source\repos\home work oop 4\home work oop 4\train.cpp(50,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\VS\source\repos\home work oop 4\home work oop 4\train.cpp(63,20): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  home work oop 4.vcxproj -> C:\Users\VS\source\repos\home work oop 4\Debug\home work oop 4.exe

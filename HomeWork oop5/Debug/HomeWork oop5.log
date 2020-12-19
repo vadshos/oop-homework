@@ -1,7 +1,0 @@
-﻿  String.cpp
-C:\Users\VS\source\repos\HomeWork oop5\HomeWork oop5\String.cpp(43,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\VS\source\repos\HomeWork oop5\HomeWork oop5\String.cpp(46,43): warning C4018: '<=': signed/unsigned mismatch
-C:\Users\VS\source\repos\HomeWork oop5\HomeWork oop5\String.cpp(60,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\VS\source\repos\HomeWork oop5\HomeWork oop5\String.cpp(73): warning C4172: returning address of local variable or temporary: temp
-C:\Users\VS\source\repos\HomeWork oop5\HomeWork oop5\String.cpp(88): warning C4172: returning address of local variable or temporary: temp
-  HomeWork oop5.vcxproj -> C:\Users\VS\source\repos\HomeWork oop5\Debug\HomeWork oop5.exe
