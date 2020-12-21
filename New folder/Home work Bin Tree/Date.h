@@ -5,18 +5,18 @@
 int LongMonth[] = { 1,3,5,7,8,10,12 };
 const char* sMonth[] =
 {
-    "января",
-    "февраля",
-    "марта",
-    "апреля",
-    "мая",
-    "июня",
-    "июля",
-    "августа",
-    "сентября",
-    "октября",
-    "ноября",
-    "декабря"
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
 };
 
 class date
@@ -24,13 +24,13 @@ class date
 public:
     friend class Violation;
     int day, month, year;
-    bool bChangeDay, bChangeMonth, bChangeYear;//Флаги указывающие на корректировку 
+    bool bChangeDay, bChangeMonth, bChangeYear;
     char sDate[256];//Дата в строковом формате
 
-    date();                               //конструктор без параметров
-    date(int iDay, int iMonth, int iYear);//конструктор с параметрами
-    date(const date& val);                //конструктор копирования
-    ~date();                              //деструктор
+    date();                               
+    date(int iDay, int iMonth, int iYear);
+    date(const date& val);               
+    ~date();                              
 
     int getDay() { return day; }
     int getMonth() { return month; }
@@ -39,7 +39,6 @@ public:
     void setDay(int iDay);
     void setMonth(int iMonth);
     void setYear(int iYear);
-    //Сигнализируют пользователя о некрректности ввода даты
     bool IsChangeDay() { return bChangeDay; }
     bool IsChangeMonth() { return bChangeMonth; }
     bool IsChangeYear() { return bChangeYear; }
