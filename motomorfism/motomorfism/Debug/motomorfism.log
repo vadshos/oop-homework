@@ -1,0 +1,12 @@
+﻿  motomorfism.cpp
+C:\Users\vs\source\repos\motomorfism\motomorfism\Zoo.h(32,22): warning C4244: 'argument': conversion from 'MyType' to 'const size_t', possible loss of data
+          with
+          [
+              MyType=double
+          ]
+C:\Users\vs\source\repos\motomorfism\motomorfism\motomorfism.cpp(15): message : see reference to function template instantiation 'void Zoo::edit<double>(MyType,const size_t)' being compiled
+          with
+          [
+              MyType=double
+          ]
+  motomorfism.vcxproj -> C:\Users\vs\source\repos\motomorfism\Debug\motomorfism.exe

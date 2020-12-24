@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Animal" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAAACAQAAAAAAAAAAAAAAFAAAkIAAAAAAAAAA=</HashCode>
+      <FileName>Animal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cat" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQQAAAAAAQAAAAgAAAAAAAAAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dog" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQQAAAAAAAAAAAAAAAAAAAACAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomesticAnimal" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgAAAAAAAAAAAAAABAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DomesticAnimal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WildAnimal" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACAA=</HashCode>
+      <FileName>WildAnimal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAgACAAA=</HashCode>
+      <FileName>Zoo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
