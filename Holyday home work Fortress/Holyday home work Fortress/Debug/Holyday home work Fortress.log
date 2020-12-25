@@ -1,0 +1,3 @@
+﻿  Battle.cpp
+C:\Users\vs\source\repos\Holyday home work Fortress\Holyday home work Fortress\Battle.cpp(13,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Holyday home work Fortress.vcxproj -> C:\Users\vs\source\repos\Holyday home work Fortress\Debug\Holyday home work Fortress.exe
