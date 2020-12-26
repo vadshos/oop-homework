@@ -6,14 +6,19 @@
 class AutoPark
 {
 public:
-	friend class Dlist;
+	friend class DList;
+
 	void printInRoude();
 	void printInAutoPark();
 	void buyBus( Bus obj);
-	void sendInRoude(const Bus& numberBus);
+	void sendInRoude(const size_t& numberBus);
+	void removeFromRoude(const size_t& numberBus);
+	void sellBus(const size_t& numberBus);
+
 
 private:
-	DList inRoude;
-	DList inAutoPark;
+	Dlist<Bus> inRoude;
+	Dlist<Bus> inAutoPark;
+
 };
 
