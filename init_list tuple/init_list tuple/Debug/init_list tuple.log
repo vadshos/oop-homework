@@ -1,0 +1,5 @@
+﻿  init_list tuple.cpp
+C:\Users\User\source\repos\init_list tuple\init_list tuple\Circle.h(25,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\source\repos\init_list tuple\init_list tuple\Circle.h(30,21): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\source\repos\init_list tuple\init_list tuple\init_list tuple.cpp(12,7): error C2371: 't': redefinition; different basic types
+C:\Users\User\source\repos\init_list tuple\init_list tuple\init_list tuple.cpp(7): message : see declaration of 't'
