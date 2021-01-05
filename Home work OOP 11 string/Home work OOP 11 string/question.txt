@@ -1,0 +1,6 @@
+Popular programming language?
+PYTHON
+OOP principle?
+INCAPSULATION
+Key word for overload operation?
+OPERATOR
