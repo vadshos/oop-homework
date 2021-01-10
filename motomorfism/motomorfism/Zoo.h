@@ -10,6 +10,7 @@ public:
 	template<typename MyType>void add(MyType* obj);
 	virtual void print() const;
 	template<typename MyType> void edit(MyType var ,const size_t index);
+	void erase(const size_t& index);
 private:
 	vector<Animal*> zoo;
 };

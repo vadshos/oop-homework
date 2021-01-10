@@ -13,6 +13,8 @@ int main()
 
 	zoo.print();
 	zoo.edit(5.3, 0);
+	zoo.erase(0);
+	std::cout << ""<<std::endl;
 	zoo.print();
 }
 

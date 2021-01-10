@@ -9,3 +9,10 @@ void Zoo::print() const
 		i->print();
 	}
 }
+
+void Zoo::erase(const size_t& index)
+{
+	if (index <= zoo.size()) {
+		zoo.erase(zoo.begin()+index);
+	}
+}
