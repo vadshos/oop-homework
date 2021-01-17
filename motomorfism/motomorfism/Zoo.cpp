@@ -4,8 +4,10 @@
 
 void Zoo::print() const
 {
+	std::cout << sizeof(zoo.begin()) << std::endl;
 	for (auto& i : zoo)
 	{
+		
 		i->print();
 	}
 }
