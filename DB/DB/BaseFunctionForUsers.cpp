@@ -3,7 +3,7 @@
 
 
 
-void BaseFunctionForUsers::getAllProductsCategory(const std::string& nameTable)
+void BaseFunctionForUsers::getAllProductsCategory( std::string& nameTable)
 {
 	std::vector<Product*> list_product;
 	int qstate;
@@ -46,8 +46,7 @@ void BaseFunctionForUsers::getAllProductsCategory(const std::string& nameTable)
 
 				}
 			}
-
-			showAllProductsCategory(list_product);
+			SortBy(list_product);
 		}
 	}
 }
@@ -92,8 +91,11 @@ void BaseFunctionForUsers::buyProduct(Product*obj)
 	}
 }
 
-
-void BaseFunctionForUsers::showAllProductsCategory(const std::vector<Product*>& list)
+/// <summary>
+/// 
+/// </summary>
+/// <param name="list">vector products</param>
+void BaseFunctionForUsers::showAllProductsCategory(std::vector<Product*>& list)
 {
 	while (true) {
 	size_t achion = 0;
@@ -146,6 +148,9 @@ void BaseFunctionForUsers::showAllProductsCategory(const std::vector<Product*>& 
 	}
 }
 
+/// <summary>
+/// show category from vector
+/// </summary>
 void BaseFunctionForUsers::showCategory()
 {
 	system("mode con cols=100 lines=50");
@@ -187,4 +192,68 @@ void BaseFunctionForUsers::showCategory()
 			}
 		}
 		getAllProductsCategory(*(category.begin() + achion));
+}
+/// <summary>
+/// sort vector for some parameters
+/// </summary>
+/// <param name="list"></param>
+void BaseFunctionForUsers::SortBy( std::vector<Product*>& list)
+{
+	system("mode con cols=100 lines=50");
+	std::vector<std::string> category{ "For Name ","Price up","Price low","Count" };
+	int achion = 0;
+	int a = 0;
+	while (a != 13) {
+		system("cls");
+		for (int i = 0; i < category.size(); i++) {
+			if (i == achion) {
+				Login::SetColor(0, 14);
+			}
+			if (i != achion) {
+				Login::SetColor(0, 15);
+			}
+			std::cout << *(category.begin() + i) << std::endl;
+			Login::SetColor(0, 15);
+		}
+		a = _getch();
+		if (a == 119) {
+			achion--;
+			if (achion < 0) {
+				achion = category.size();
+			}
+		}
+		else if (a == 115) {
+			achion++;
+			if (achion > category.size()) {
+				achion = 0;
+			}
+		}
+		else if (a == 27) {
+			if (Login::getRole() == 1) {
+				AdminFunction::menu();
+			}
+			else {
+				UserFunction::menu();
+			}
+		}
+	}
+	if (achion == 0) {
+		std::sort(list.begin(), list.end(), [](Product* e1, Product* e2) {
+			return e1->getName() < e2->getName();
+			});
+	}else if (achion == 1) {
+		std::sort(list.begin(), list.end(), [](Product* e1, Product* e2) {
+			return e1->getPrice() < e2->getPrice();
+			});
+	}
+	else if (achion == 2) {
+		std::sort(list.begin(), list.end(), [](Product* e1, Product* e2) {
+			return e1->getPrice() > e2->getPrice();
+			});
+	}else if (achion == 3) {
+		std::sort(list.begin(), list.end(),[](Product * e1, Product * e2) {
+			return e1->getCountProduct() > e2->getCountProduct();
+		});
+	}
+	showAllProductsCategory(list);
 }
