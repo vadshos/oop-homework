@@ -1,0 +1,9 @@
+﻿  BaseFunctionForUsers.cpp
+C:\Users\User\source\repos\DB\DB\BaseFunctionForUsers.cpp(77,12): warning C4101: 'row': unreferenced local variable
+C:\Users\User\source\repos\DB\DB\BaseFunctionForUsers.cpp(171,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  2 of 371 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  DB.vcxproj -> C:\Users\User\source\repos\DB\x64\Release\DB.exe
