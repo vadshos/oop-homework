@@ -1,0 +1,10 @@
+﻿  Class work.cpp
+C:\Users\User\source\repos\Class work\Class work\DateBase.h(22,6): warning C4101: 'value': unreferenced local variable
+C:\Users\User\source\repos\Class work\Class work\DateBase.h(53,6): warning C4101: 'value': unreferenced local variable
+C:\Users\User\source\repos\Class work\Class work\DateBase.h(77,6): warning C4101: 'value': unreferenced local variable
+  DateBase.cpp
+C:\Users\User\source\repos\Class work\Class work\DateBase.h(22,6): warning C4101: 'value': unreferenced local variable
+C:\Users\User\source\repos\Class work\Class work\DateBase.h(53,6): warning C4101: 'value': unreferenced local variable
+C:\Users\User\source\repos\Class work\Class work\DateBase.h(77,6): warning C4101: 'value': unreferenced local variable
+  Generating Code...
+  Class work.vcxproj -> C:\Users\User\source\repos\Class work\Debug\Class work.exe
